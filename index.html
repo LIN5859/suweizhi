@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="苏州地方美食文化展示网站，从经典苏帮菜、时令点心到古城寻味路线。"
+    />
+    <title>苏味志｜一席江南，四时有味</title>
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header" id="top">
+      <a class="brand" href="index.html" aria-label="苏味志首页">
+        <span class="brand-seal">苏</span
+        ><span><b>苏味志</b><small>SUZHOU FOOD ATLAS</small></span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="主导航">
+        <a class="active" href="index.html">首页</a>
+        <a href="classics.html">苏味图鉴</a>
+        <a href="seasonal.html">四时风物</a>
+        <a href="routes.html">寻味路线</a>
+        <a href="stories.html">食事</a>
+      </nav>
+      <button class="search-open" type="button" aria-label="打开美食搜索">
+        寻味 <span>⌕</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">SUZHOU · JIANGNAN</p>
+          <h1 id="hero-title">一席江南<br /><em>四时</em>有味</h1>
+          <p class="hero-lead">
+            甜不是唯一答案。鲜、糯、酥、雅，才是苏州写给味蕾的四行诗。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#atlas"
+              >翻开苏味图鉴 <span>→</span></a
+            >
+            <a class="text-link" href="routes.html"
+              >跟着路线去吃 <span>↗</span></a
+            >
+          </div>
+        </div>
+        <div class="hero-art reveal" aria-label="苏州传统美食宴席">
+          <div class="hero-image"></div>
+          <div class="dish-note note-one">
+            <b>松鼠鳜鱼</b><span>形如松鼠 · 酸甜酥香</span>
+          </div>
+          <div class="dish-note note-two">
+            <b>三虾面</b><span>初夏限定 · 鲜上加鲜</span>
+          </div>
+          <div class="year-stamp">始于<br /><b>江南</b></div>
+        </div>
+        <a class="scroll-cue" href="#atlas"><span></span>向下寻味</a>
+      </section>
+
+      <section class="ticker" aria-label="苏味特色">
+        <div class="ticker-track">
+          <span>不时不食</span><i>◆</i><span>鲜而不腻</span><i>◆</i
+          ><span>精工细作</span><i>◆</i><span>一城百味</span><i>◆</i
+          ><span>不时不食</span><i>◆</i><span>鲜而不腻</span>
+        </div>
+      </section>
+
+      <section class="section atlas" id="atlas" aria-labelledby="atlas-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">TASTE ATLAS · 01</p>
+            <h2 id="atlas-title">苏味图鉴</h2>
+          </div>
+          <p>从一尾鳜鱼到一碗细面，认识苏州味道的细密层次。</p>
+        </div>
+        <div class="filter-bar reveal" role="group" aria-label="美食分类筛选">
+          <button class="filter-btn active" type="button" data-filter="all">
+            全部
+          </button>
+          <button class="filter-btn" type="button" data-filter="dish">
+            苏帮菜
+          </button>
+          <button class="filter-btn" type="button" data-filter="noodle">
+            面与小吃
+          </button>
+          <button class="filter-btn" type="button" data-filter="sweet">
+            茶点甜味
+          </button>
+        </div>
+        <div class="dish-grid">
+          <article class="dish-card card-large reveal" data-category="dish">
+            <a href="classics.html" aria-label="查看松鼠鳜鱼详情"
+              ><div class="dish-photo crop-fish">
+                <span class="rank">壹</span
+                ><button
+                  class="save-btn"
+                  type="button"
+                  aria-label="收藏松鼠鳜鱼"
+                  data-save="松鼠鳜鱼"
+                >
+                  ♡
+                </button>
+              </div></a
+            >
+            <div class="dish-info">
+              <div>
+                <p>姑苏名菜 · 宴席头牌</p>
+                <h3>松鼠鳜鱼</h3>
+              </div>
+              <span class="flavor">酸甜 · 酥脆</span>
+            </div>
+          </article>
+          <article class="dish-card reveal" data-category="noodle">
+            <a href="noodles.html"
+              ><div class="dish-photo crop-noodle">
+                <span class="rank">贰</span
+                ><button
+                  class="save-btn"
+                  type="button"
+                  aria-label="收藏三虾面"
+                  data-save="三虾面"
+                >
+                  ♡
+                </button>
+              </div></a
+            >
+            <div class="dish-info">
+              <div>
+                <p>初夏限定 · 一口极鲜</p>
+                <h3>三虾面</h3>
+              </div>
+              <span class="flavor">鲜 · 弹</span>
+            </div>
+          </article>
+          <article class="dish-card reveal" data-category="sweet">
+            <a href="sweets.html"
+              ><div class="dish-photo crop-cake">
+                <span class="rank">叁</span
+                ><button
+                  class="save-btn"
+                  type="button"
+                  aria-label="收藏桂花糖年糕"
+                  data-save="桂花糖年糕"
+                >
+                  ♡
+                </button>
+              </div></a
+            >
+            <div class="dish-info">
+              <div>
+                <p>秋日桂香 · 软糯清甜</p>
+                <h3>桂花糖年糕</h3>
+              </div>
+              <span class="flavor">糯 · 香</span>
+            </div>
+          </article>
+          <article class="dish-card reveal" data-category="dish">
+            <a href="classics.html#jiangrou"
+              ><div class="dish-photo crop-pork">
+                <span class="rank">肆</span
+                ><button
+                  class="save-btn"
+                  type="button"
+                  aria-label="收藏酱方"
+                  data-save="酱方"
+                >
+                  ♡
+                </button>
+              </div></a
+            >
+            <div class="dish-info">
+              <div>
+                <p>浓油赤酱 · 入口酥化</p>
+                <h3>苏式酱方</h3>
+              </div>
+              <span class="flavor">浓 · 醇</span>
+            </div>
+          </article>
+          <article class="dish-card card-wide reveal" data-category="sweet">
+            <a href="sweets.html#qingtuan"
+              ><div class="dish-photo crop-green">
+                <span class="rank">伍</span
+                ><button
+                  class="save-btn"
+                  type="button"
+                  aria-label="收藏青团"
+                  data-save="青团"
+                >
+                  ♡
+                </button>
+              </div></a
+            >
+            <div class="dish-info">
+              <div>
+                <p>清明春食 · 草木清气</p>
+                <h3>青团</h3>
+              </div>
+              <span class="flavor">清 · 软</span>
+            </div>
+          </article>
+        </div>
+        <a class="center-link" href="classics.html"
+          >查看完整苏味图鉴 <span>→</span></a
+        >
+      </section>
+
+      <section class="season-band" aria-labelledby="season-title">
+        <div class="season-copy reveal">
+          <p class="eyebrow">SEASONAL TABLE · 02</p>
+          <h2 id="season-title">苏州人的味觉<br />跟着<em>四时</em>走</h2>
+          <p>春尝青，夏吃鲜，秋闻桂，冬进补。节气一到，市场和灶头会先知道。</p>
+          <a class="btn btn-light" href="seasonal.html">查看四季食单 →</a>
+        </div>
+        <div class="season-grid reveal">
+          <a href="seasonal.html#spring"
+            ><span>春</span><b>碧螺春 · 青团</b><small>草木初醒</small></a
+          >
+          <a href="seasonal.html#summer" class="current"
+            ><span>夏</span><b>三虾面 · 荷叶粉蒸肉</b><small>鲜味正盛</small></a
+          >
+          <a href="seasonal.html#autumn"
+            ><span>秋</span><b>大闸蟹 · 桂花糕</b><small>满城桂香</small></a
+          >
+          <a href="seasonal.html#winter"
+            ><span>冬</span><b>藏书羊肉 · 冬酿酒</b><small>围炉暖食</small></a
+          >
+        </div>
+      </section>
+
+      <section class="section routes" aria-labelledby="routes-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">WALK & TASTE · 03</p>
+            <h2 id="routes-title">沿着水巷去寻味</h2>
+          </div>
+          <p>不只列店名，我们把晨光、桥影与一日三餐串成路线。</p>
+        </div>
+        <div class="route-grid">
+          <a class="route-card route-pingjiang reveal" href="pingjiang.html"
+            ><span class="route-no">01</span>
+            <div>
+              <p>2.8 KM · 约半日</p>
+              <h3>平江路<br />晨食漫游</h3>
+              <span>哑巴生煎 → 鸡头米 → 苏式茶馆</span>
+            </div>
+            <b>去漫游 ↗</b></a
+          >
+          <a class="route-card route-shantang reveal" href="shantang.html"
+            ><span class="route-no">02</span>
+            <div>
+              <p>3.6 KM · 约半日</p>
+              <h3>山塘街<br />夜味寻灯</h3>
+              <span>汤包 → 海棠糕 → 枫镇大面</span>
+            </div>
+            <b>去漫游 ↗</b></a
+          >
+          <a class="route-card route-market reveal" href="markets.html"
+            ><span class="route-no">03</span>
+            <div>
+              <p>菜场特辑 · 约 2 小时</p>
+              <h3>双塔市集<br />在地采购</h3>
+              <span>时蔬 → 熟食 → 手作点心</span>
+            </div>
+            <b>去逛逛 ↗</b></a
+          >
+        </div>
+      </section>
+
+      <section class="quote-section reveal">
+        <p>“味道是城市最慢的记忆。”</p>
+        <span>在苏州，一顿饭里藏着节气、手艺与人情。</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="brand-seal">苏</span>
+        <h2>吃一口苏州<br />记一座江南</h2>
+      </div>
+      <div class="footer-nav">
+        <div>
+          <b>寻味</b><a href="classics.html">苏帮名菜</a
+          ><a href="noodles.html">面与小吃</a><a href="sweets.html">茶点甜味</a>
+        </div>
+        <div>
+          <b>漫游</b><a href="pingjiang.html">平江路</a
+          ><a href="shantang.html">山塘街</a><a href="markets.html">双塔市集</a>
+        </div>
+        <div>
+          <b>关于</b><a href="stories.html">苏味故事</a
+          ><a href="etiquette.html">食俗礼仪</a
+          ><a href="about.html">关于本站</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>课程作业 · 苏州地方美食主题网站</span
+        ><a href="#top">回到顶部 ↑</a>
+      </div>
+    </footer>
+
+    <dialog class="search-dialog" aria-labelledby="search-title">
+      <button class="search-close" type="button" aria-label="关闭搜索">
+        ×
+      </button>
+      <p class="eyebrow">SEARCH THE FLAVOR</p>
+      <h2 id="search-title">今天想吃什么？</h2>
+      <label
+        ><span>输入美食、街巷或口味</span
+        ><input id="search-input" type="search" placeholder="例如：三虾面"
+      /></label>
+      <div class="search-results" aria-live="polite"></div>
+    </dialog>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="site.js"></script>
+  </body>
+</html>
